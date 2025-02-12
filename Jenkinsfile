@@ -2,9 +2,8 @@ pipeline {
     agent any
 
     environment {
-        INPUT_DATE = "${env.INPUT_DATE}" // Ensure Jenkins reads the environment variable
+        INPUT_DATE = "${env.INPUT_DATE}"
     }
-
     stages {
         stage('Build Docker Image') {
             steps {
