@@ -16,7 +16,7 @@ pipeline {
         stage('Run Python Script') {
             steps {
                 script {
-                    sh 'docker run -e INPUT_DATE="$INPUT_DATE" first_job1'
+                    sh 'docker run -e INPUT_DATE="$INPUT_DATE" --rm  first_job1'
                 }
             }
         }
