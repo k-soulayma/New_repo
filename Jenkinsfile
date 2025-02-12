@@ -1,9 +1,6 @@
 pipeline {
     agent any
 
-    environment {
-        INPUT_DATE = "${env.INPUT_DATE}"
-    }
     stages {
         stage('Build Docker Image') {
             steps {
