@@ -51,5 +51,7 @@ html_template = """
 template = Template(html_template)
 html_output = template.render(test_results=test_results)
 
-with open("test_report.html", "w") as f:
-    f.write(html_output)
+f = open("test_report.html", "w")
+
+f.write(html_output)
+print("test test")
