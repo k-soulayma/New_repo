@@ -9,65 +9,47 @@
         table { width: 100%; border-collapse: collapse; margin-top: 20px; }
         th, td { padding: 8px 12px; text-align: left; border: 1px solid #ddd; }
         th { background-color: #f2f2f2; }
-        .pass { background-color: #4CAF50; color: white; }
-        .fail { background-color: #f44336; color: white; }
-        .in-progress { background-color: #FF9800; color: white; }
-        .open { background-color: #2196F3; color: white; }
+        .ok { background-color: #4CAF50; color: white; } /* Green for OK */
+        .ko { background-color: #f44336; color: white; } /* Red for KO */
     </style>
 </head>
 <body>
 
-    <h1>Test Plan Execution Report</h1>
+    <h1>Test Report</h1>
     <p><strong>Summary:</strong> 5 Test Plans, 58 Test Cases, 27 Pass, 17 Fail</p>
 
     <table>
         <thead>
             <tr>
-                <th>Test Case Key</th>
-                <th>Summary</th>
+                <th>Test_ID</th>
+                <th>TEST</th>
                 <th>Status</th>
-                <th>Requirements</th>
-                <th>Defects</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>SAMPLE-134</td>
-                <td>Login with registered fingerprints</td>
-                <td class="in-progress">In Progress</td>
-                <td>SAMPLE-1</td>
-                <td>0</td>
+                <td>T_001</td>
+                <td>Test1</td>
+                <td class="ok">OK</td>
             </tr>
             <tr>
-                <td>SAMPLE-133</td>
-                <td>Search for the nearest bank branches</td>
-                <td class="fail">Fail</td>
-                <td>SAMPLE-4</td>
-                <td>1</td>
+                <td>T_002</td>
+                <td>Test2</td>
+                <td class="ko">KO</td>
             </tr>
             <tr>
-                <td>SAMPLE-128</td>
-                <td>Three attempts to log in with incorrect data - fingerprints</td>
-                <td class="fail">Fail</td>
-                <td>SAMPLE-10</td>
-                <td>0</td>
+                <td>T_003</td>
+                <td>Test3</td>
+                <td class="ko">KO</td>
             </tr>
             <tr>
-                <td>SAMPLE-125</td>
-                <td>Convert the currency to another one PLN to EUR</td>
-                <td class="pass">Pass</td>
-                <td>SAMPLE-9</td>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td>SAMPLE-124</td>
-                <td>Launch the accessibility mode</td>
-                <td class="open">Open</td>
-                <td>SAMPLE-8</td>
-                <td>0</td>
+                <td>T_004</td>
+                <td>Test4</td>
+                <td class="ok">OK</td>
             </tr>
         </tbody>
     </table>
 
 </body>
 </html>
+
